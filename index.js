@@ -11,15 +11,15 @@ server.listen(4000, () => {
 } ) */
 
 import express from "express";
-import phones from "phones.js";
+import phone from "./phones.js";
 
-const product = [...phones];
+const product = [...phone];
 
 const app = express();
 
 const port = 3000;
 
-app.get("/phones", (req, res) => {
+app.get("/", (req, res) => {
   res.send(product);
 });
 
