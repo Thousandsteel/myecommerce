@@ -248,3 +248,5 @@ const phone = [
     selfie: "12MP",
   },
 ];
+
+export default phone;
