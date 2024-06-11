@@ -11,16 +11,9 @@ server.listen(4000, () => {
 } ) */
 
 import express from "express";
-import cors from cors
-import phones from "phones.js"
+import phones from "phones.js";
 
-app.use(
-  cors({
-    origin: "*" 
-  })
-)
-
-const product = [...phones]
+const product = [...phones];
 
 const app = express();
 
